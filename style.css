@@ -1,0 +1,102 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, b, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+.cabecalho {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.cabecalho .imagem-fundo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+    filter: brightness(0.5); 
+}
+
+.cabecalho .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 45px;
+    height: auto;
+}
+
+
+.cabecalho .titulo {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 5rem; 
+    font-weight: bold; 
+    text-align: center; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-family: 'Roboto', sans-serif;
+}
+
+.faixa-verde {
+    background-color: #20b2aa;
+    height: 5px;
+    width: 100%;
+}
+
+body {
+    background-color: #f5f5f5; /* Fundo cinza claro para a tela */
+    font-family: 'Roboto', sans-serif; /* Fonte Roboto */
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    background-color: #fff; /* Fundo branco para o quadro */
+    width: 300px; /* Largura do quadrado */
+    margin: 50px auto; /* Centraliza horizontalmente */
+    padding: 10px; /* Preenchimento interno */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 5px; /* Arredondamento das bordas */
+    position: relative; /* Para utilizar o 'top' e 'bottom' */
+    top: 50px; /* Distância da parte superior da página */
+    bottom: 50px; /* Distância da parte inferior da página */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #6a1b9a; /* Cor diferente para o hover */
+}
